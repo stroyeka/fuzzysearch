@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.com/stroyeka/fuzzysearch.svg?branch=main)
+![Build Status](https://api.travis-ci.org/stroyeka/fuzzysearch.svg?branch=main&status=passed)
 
 First step test task...
 
