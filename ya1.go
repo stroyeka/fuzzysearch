@@ -25,7 +25,7 @@ n = len(res), m=len(in)
 n * (2m) +  n = n(1+2m) = n*m
 */
 
-func fuzzysearch(res string, in string) bool {
+func Fuzzysearch(res string, in string) bool {
 	if (res == "" && in == "") || res == "" {
 		return true
 	}
@@ -101,13 +101,13 @@ func getMin(slice []int, curMin int) int {
 }
 
 func main() {
-	fmt.Println(fuzzysearch("car", "cartwheel"))       // true
-	fmt.Println(fuzzysearch("cwhl", "cartwheel"))      // true
-	fmt.Println(fuzzysearch("cwheel", "cartwheel"))    // true
-	fmt.Println(fuzzysearch("cartwheel", "cartwheel")) // true
-	fmt.Println(fuzzysearch("cwheeel", "cartwheel"))   // false
-	fmt.Println(fuzzysearch("lw", "cartwheel"))        // false
-	fmt.Println(fuzzysearch("wl", "cartwheel"))        // true
-	fmt.Println(fuzzysearch("cewe", "caertwheel"))     // true
-	fmt.Println(fuzzysearch("ceew", "caertwheel"))     // false
+	fmt.Println(Fuzzysearch("car", "cartwheel"))       // true
+	fmt.Println(Fuzzysearch("cwhl", "cartwheel"))      // true
+	fmt.Println(Fuzzysearch("cwheel", "cartwheel"))    // true
+	fmt.Println(Fuzzysearch("cartwheel", "cartwheel")) // true
+	fmt.Println(Fuzzysearch("cwheeel", "cartwheel"))   // false
+	fmt.Println(Fuzzysearch("lw", "cartwheel"))        // false
+	fmt.Println(Fuzzysearch("wl", "cartwheel"))        // true
+	fmt.Println(Fuzzysearch("cewe", "caertwheel"))     // true
+	fmt.Println(Fuzzysearch("ceew", "caertwheel"))     // false
 }
