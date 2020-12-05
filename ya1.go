@@ -39,7 +39,7 @@ func fuzzysearch(res string, in string) bool {
 	outMap := make(map[rune][]int, len(inArr))
 
 	for ri, r := range inArr {
-		for _, s := range []rune(res) {
+		for _, s := range res {
 			if s == r {
 				_, ok := outMap[s]
 				if !ok {
@@ -52,9 +52,8 @@ func fuzzysearch(res string, in string) bool {
 	}
 
 	// outMap - map with key which is rune from left side and value - array of rune positions from 2 arg
-	resArr := []rune(res)
 	arrSorted := make([]int, 0)
-	for _, r := range resArr {
+	for _, r := range res {
 		outr, ok := outMap[r]
 		if ok {
 			var curMin int = -1
